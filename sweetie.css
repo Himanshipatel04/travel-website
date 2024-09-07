@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+}
+
+#back {
+  width: 100%;
+  height: 100%;
+}
+
+#back img {
+  height: 99.5%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#back video {
+  height: 99.5%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#top {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#workingArea {
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+  height: 100vh;
+  max-width: 1920px;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 40px 0;
+  cursor: pointer;
+}
+
+#navLeft,
+#navRight {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  color: white;
+  pointer-events: all;
+}
+
+#navLeft img {
+  height: 3rem;
+}
+
+#nav h2 {
+  font-family: "Aclonica";
+}
+
+#nav a {
+  color: #fff;
+  font-family: "Aclonica", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  transition: 300ms;
+}
+
+#nav a:hover {
+  color: red;
+}
+
+#hero {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 50%;
+  left: 0;
+  transform: translate(0%, -50%);
+  width: 100%;
+}
+
+#heroLeft {
+  min-width: 50%;
+}
+
+#heroLeft button {
+  pointer-events: all;
+  font-family: "kajiro";
+  font-size: 3rem;
+  margin-top: 2rem;
+  height: 3vw;
+  width: 9vw;
+  letter-spacing: 0rem;
+  transition: 1s;
+  outline: none;
+  border: none;
+}
+
+#heroLeft button:hover {
+  cursor: pointer;
+  background-color: pink;
+}
+
+#heroLeft .elem {
+  position: relative;
+  height: 9vw;
+  overflow: hidden;
+}
+
+#heroLeft .elem h1:nth-child(1) {
+  top: 0;
+}
+
+#heroLeft .elem h1 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  line-height: 0.9;
+  font-family: "kajiro";
+  color: #fff;
+  font-weight: 100;
+  font-size: 11vw;
+}
+
+#heroRight {
+  width: 30%;
+  color: white;
+}
+
+#heroRight button {
+  pointer-events: all;
+  font-family: "kajiro";
+  font-size: 3rem;
+  margin-top: 2rem;
+  height: 3vw;
+  width: 9vw;
+  letter-spacing: 0rem;
+  transition: 1s;
+  outline: none;
+  border: none;
+}
+
+#heroRight button:hover {
+  cursor: pointer;
+  background-color: crimson;
+}
+
+#heroRight .elem2 {
+  position: relative;
+  height: 9vw;
+  overflow: hidden;
+}
+
+#heroRight .elem2 p:nth-child(1) {
+  top: 0;
+}
+
+#heroRight .elem2 p {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  line-height: 1.2;
+  font-family:'Alkatra';
+  color: #fff;
+  font-weight: 100;
+}
